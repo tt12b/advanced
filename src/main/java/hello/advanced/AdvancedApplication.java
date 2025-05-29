@@ -9,6 +9,7 @@ public class AdvancedApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(AdvancedApplication.class, args);
+        System.out.println("git Test");
         System.out.println("Hello World");
 
     }
