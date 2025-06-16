@@ -49,7 +49,7 @@ public class TemplateMethodTest {
 
     @Test
     void templateMethodV2(){
-        //-----------------------------------------
+        //별도의 클래스 구현-----------------------------------------
         AbstractTemplate template1 = new SubClassLogic1();
         log.info("className1={}",template1.getClass()); //className1=class hello.advanced.trace.template.code.SubClassLogic1
         template1.excute();
@@ -64,7 +64,7 @@ public class TemplateMethodTest {
         log.info("className2={}",template2.getClass()); //className2=class hello.advanced.trace.template.TemplateMethodTest$1
         template2.excute();
 
-        //-----------------------------------------
+        //내부 익명 클래스 사용-----------------------------------------
         new AbstractTemplate() {
             @Override
             protected void call() {
