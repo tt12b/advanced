@@ -8,7 +8,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class AdvancedApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(AdvancedApplication.class, args);
+        try {
+            SpringApplication.run(AdvancedApplication.class, args);
+        } catch (Exception e){
+            System.out.println(e);
+        }
+
         System.out.println("git Test");
         System.out.println("git Test2");
         System.out.println("Hello World");
