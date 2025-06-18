@@ -14,8 +14,6 @@ public class AdvancedApplication {
             System.out.println(e);
         }
 
-        System.out.println("git Test");
-        System.out.println("git Test2");
         System.out.println("Hello World");
 
     }
